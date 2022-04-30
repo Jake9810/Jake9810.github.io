@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MAPA DE TRAYECTORIAS | UPIITA-IPN</title>
+
+    <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+
+    <!-- Bootstrap -->
+    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- bootstrap-progressbar -->
+    <link href="vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+
+    <!-- Custom Theme Style -->
+    <link href="build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-sm">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-university"></i> <span>UPIITA-IPN</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>Menú General</h3>
+                <ul class="nav side-menu">
+                  <li><a href="index.html"><i class="fa fa-home"></i> Inicio </a></li>
+                  <li><a href="mtelematica.html"><i class="fa fa-laptop"></i> Ingeniería Telemática </a></li>
+                  <li><a href="mmecatronica.html"><i class="fa fa-gears"></i> Ingeniería Mecatrónica </a></li>
+                  <li><a href="mbionica.html"><i class="fa fa-group"></i> Ingeniería Biónica </a></li>
+                  <li><a href="misisa.html"><i class="fa fa-car"></i> ISISA </a></li>
+                  <li><a href="menergia1.html"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Energía </a></li>
+                </ul>
+              </div>
+
+            </div>
+            <!-- /sidebar menu -->
+
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" class="dropdown">
+                  <a href="index.html">
+                    <i class="fa fa-home"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="x_panel">
+                <div class="x_title">
+                  <h2>Mapa de Trayectorias [Obligatorias] <small>Programa de Ingeniería en Sistemas Automotrices (ISISA) </small></h2>
+                  <ul class="nav navbar-right panel_toolbox">
+                    <li class="dropdown">
+                      <a href="#" role="button" aria-expanded="false"><i class="fa fa-tasks"></i></a>
+
+                    </li>
+                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                    </li>
+                    <li><a class="close-link"><i class="fa fa-close"></i></a>
+                    </li>
+                  </ul>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+
+                  <!-- Smart Wizard -->
+                  <p>Presiona los botones de "Siguiente" y "Anterior" o las teclas de flecha para navegar en los semestres. Da un click para ver las materias necesarias para cursar la materia. Da doble click para ver detalles de la materia.</p>
+                  <p>
+                    <b>Elige el nivel:</b>
+                    Nivel III:
+                    <input type="radio" name="nivel" id="niii" value="3" />
+                  </p>
+                  <div id="wizard" class="form_wizard wizard_horizontal">
+                    <ul class="wizard_steps">
+                      <li>
+                        <a href="#step-1">
+                          <span class="step_no">7</span>
+                          <span class="step_descr">
+                                            7mo Semestre<br />
+                                        </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#step-1">
+                          <span class="step_no">8</span>
+                          <span class="step_descr">
+                                            8vo Semestre<br />
+                                        </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#step-1">
+                          <span class="step_no">9</span>
+                          <span class="step_descr">
+                                            9no Semestre<br />
+                                        </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div id="step-1">
+                      <div class="row">
+
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv3 sem7 cur" style="width: 100%;" id="c1" data-toggle="modal">MICROCOMPUTADORAS AUTOMOTRICES I</button>
+                        </div>
+
+                        <div class="modal fade micro-autom-i-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Microcomputadoras Automotrices I</p>
+                                <p><b>Academia:</b> -</p>
+                                <p><b>Semestre:</b> 7</p>
+                                <p><b>Nivel:</b> III</p>
+                                <p><b>Programa Académico:</b> Programa de Ingeniería en Sistemas Automotrices (ISISA)</p>
+                                <p><b>Hrs. Teoría:</b> -</p>
+                                <p><b>Hrs. Práctica:</b> -</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-5 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv3 sem7 cur" style="width: 100%;" id="c2" data-toggle="modal">SENSORES AUTOMOTRICES Y ACONDICIONADORES DE SEÑAL I</button>
+                        </div>
+
+                        <div class="modal fade sensor-autom-i-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Sensores Automotrices y Acondicionadores de Señal I</p>
+                                <p><b>Academia:</b> -</p>
+                                <p><b>Semestre:</b> 7</p>
+                                <p><b>Nivel:</b> III</p>
+                                <p><b>Programa Académico:</b> Programa de Ingeniería en Sistemas Automotrices (ISISA)</p>
+                                <p><b>Hrs. Teoría:</b> -</p>
+                                <p><b>Hrs. Práctica:</b> -</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv3 sem7 cur" style="width: 100%;" id="c3" data-toggle="modal">PROG. DE SISTEMAS INMERSOS</button>
+                        </div>
+
+                        <div class="modal fade prog-sist-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Programación de Sistemas Inmersos</p>
+                                <p><b>Academia:</b> -</p>
+                                <p><b>Semestre:</b> 7</p>
+                                <p><b>Nivel:</b> III</p>
+                                <p><b>Programa Académico:</b> Programa de Ingeniería en Sistemas Automotrices (ISISA)</p>
+                                <p><b>Hrs. Teoría:</b> -</p>
+                                <p><b>Hrs. Práctica:</b> -</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv3 sem7 cur" style="width: 100%;" id="c4" data-toggle="modal">CONTROL INTELIGENTE I</button>
+                        </div>
+
+                        <div class="modal fade ctrl-int-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Control Inteligente I</p>
+                                <p><b>Academia:</b> -</p>
+                                <p><b>Semestre:</b> 7</p>
+                                <p><b>Nivel:</b> III</p>
+                                <p><b>Programa Académico:</b> Programa de Ingeniería en Sistemas Automotrices (ISISA)</p>
+                                <p><b>Hrs. Teoría:</b> -</p>
+                                <p><b>Hrs. Práctica:</b> -</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv3 sem7 cur" style="width: 100%;" id="c5" data-toggle="modal">INGENIERÍA AMBIENTAL AUTOMOTRIZ</button>
+                        </div>
+
+                        <div class="modal fade ing-amb-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Ingeniería Ambiental Automotriz</p>
+                                <p><b>Academia:</b> -</p>
+                                <p><b>Semestre:</b> 7</p>
+                                <p><b>Nivel:</b> III</p>
+                                <p><b>Programa Académico:</b> Programa de Ingeniería en Sistemas Automotrices (ISISA)</p>
+                                <p><b>Hrs. Teoría:</b> -</p>
+                                <p><b>Hrs. Práctica:</b> -</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-5 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv3 sem7 cur" style="width: 100%;" id="c6" data-toggle="modal">HUMANIDADES IV: DESARROLLO PERSONAL Y PROFESIONAL</button>
+                        </div>
+
+                        <div class="modal fade hum-iv-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Humanidades IV: Desarrollo Personal y Profesional</p>
+                                <p><b>Academia:</b> -</p>
+                                <p><b>Semestre:</b> 7</p>
+                                <p><b>Nivel:</b> III</p>
+                                <p><b>Programa Académico:</b> Programa de Ingeniería en Sistemas Automotrices (ISISA)</p>
+                                <p><b>Hrs. Teoría:</b> -</p>
+                                <p><b>Hrs. Práctica:</b> -</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv3 sem8 cur" style="width: 100%;" id="c7" data-toggle="modal">MICROCOMPUTADORAS AUTOMOTRICES II</button>
+                        </div>
+
+                        <div class="modal fade micro-autom-ii-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Microcomputadoras Automotrices II</p>
+                                <p><b>Academia:</b> -</p>
+                                <p><b>Semestre:</b> 8</p>
+                                <p><b>Nivel:</b> III</p>
+                                <p><b>Programa Académico:</b> Programa de Ingeniería en Sistemas Automotrices (ISISA)</p>
+                                <p><b>Hrs. Teoría:</b> -</p>
+                                <p><b>Hrs. Práctica:</b> -</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-5 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv3 sem8 cur" style="width: 100%;" id="c8" data-toggle="modal">SENSORES AUTOMOTRICES Y ACONDICIONADORES DE SEÑAL II</button>
+                        </div>
+
+                        <div class="modal fade sensor-autom-ii-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Sensores Automotrices y Acondicionadores de Señal II</p>
+                                <p><b>Academia:</b> -</p>
+                                <p><b>Semestre:</b> 8</p>
+                                <p><b>Nivel:</b> III</p>
+                                <p><b>Programa Académico:</b> Programa de Ingeniería en Sistemas Automotrices (ISISA)</p>
+                                <p><b>Hrs. Teoría:</b> -</p>
+                                <p><b>Hrs. Práctica:</b> -</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv3 sem8 cur" style="width: 100%;" id="c9" data-toggle="modal">CTRL. DE ACT. AUTOMOTRICES</button>
+                        </div>
+
+                        <div class="modal fade ctrl-actua-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Control de Actuadores Automotrices</p>
+                                <p><b>Academia:</b> -</p>
+                                <p><b>Semestre:</b> 8</p>
+                                <p><b>Nivel:</b> III</p>
+                                <p><b>Programa Académico:</b> Programa de Ingeniería en Sistemas Automotrices (ISISA)</p>
+                                <p><b>Hrs. Teoría:</b> -</p>
+                                <p><b>Hrs. Práctica:</b> -</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv3 sem8 cur" style="width: 100%;" id="c10" data-toggle="modal">CONTROL INTELIGENTE II</button>
+                        </div>
+
+                        <div class="modal fade ctrl-int-ii-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Control Inteligente II</p>
+                                <p><b>Academia:</b> -</p>
+                                <p><b>Semestre:</b> 8</p>
+                                <p><b>Nivel:</b> III</p>
+                                <p><b>Programa Académico:</b> Programa de Ingeniería en Sistemas Automotrices (ISISA)</p>
+                                <p><b>Hrs. Teoría:</b> -</p>
+                                <p><b>Hrs. Práctica:</b> -</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv3 sem8 cur" style="width: 100%;" id="c11" data-toggle="modal">EVUALUACIÓN ECONÓMICA DE PROYECTOS</button>
+                        </div>
+
+                        <div class="modal fade eva-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Evaluación Económica de Proyectos</p>
+                                <p><b>Academia:</b> -</p>
+                                <p><b>Semestre:</b> 8</p>
+                                <p><b>Nivel:</b> III</p>
+                                <p><b>Programa Académico:</b> Programa de Ingeniería en Sistemas Automotrices (ISISA)</p>
+                                <p><b>Hrs. Teoría:</b> -</p>
+                                <p><b>Hrs. Práctica:</b> -</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-5 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv3 sem8 cur" style="width: 100%;" id="c12" data-toggle="modal">HUMANIDADES V: EL HUMANISMO FRENTE A LA GLOBALIZACIÓN</button>
+                        </div>
+
+                        <div class="modal fade hum-v-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Humanidades v: El Humanismo Frente a la Globalización</p>
+                                <p><b>Academia:</b> -</p>
+                                <p><b>Semestre:</b> 8</p>
+                                <p><b>Nivel:</b> III</p>
+                                <p><b>Programa Académico:</b> Programa de Ingeniería en Sistemas Automotrices (ISISA)</p>
+                                <p><b>Hrs. Teoría:</b> -</p>
+                                <p><b>Hrs. Práctica:</b> -</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv3 sem9 cur" style="width: 100%;" id="c13" data-toggle="modal">PROYECTO INTEGRADOR</button>
+                        </div>
+
+                        <div class="modal fade proy-int-actua-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Proyecto Integrador</p>
+                                <p><b>Academia:</b> -</p>
+                                <p><b>Semestre:</b> 9</p>
+                                <p><b>Nivel:</b> III</p>
+                                <p><b>Programa Académico:</b> Programa de Ingeniería en Sistemas Automotrices (ISISA)</p>
+                                <p><b>Hrs. Teoría:</b> -</p>
+                                <p><b>Hrs. Práctica:</b> -</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End SmartWizard Content -->
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="vendors/nprogress/nprogress.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="vendors/iCheck/icheck.min.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="build/js/custom.min.js"></script>
+    <!-- jQuery Smart Wizard -->
+    <script src="vendors/SW/js/jquery.smartWizard.js"></script>
+
+    <!-- jQuery Smart Wizard -->
+    <script>
+      $(document).ready(function() {
+
+        $('#wizard').smartWizard({
+          keyNavigation: true,
+          enableAllSteps: true,
+          includeFinishButton : false,
+          labelPrevious:'Anterior',
+          labelNext:'Siguiente',
+          onShowStep:showAStepCallback,
+          reverseButtonsOrder: true
+        });
+
+        $('.buttonNext').addClass('btn btn-success');
+        $('.buttonPrevious').addClass('btn btn-primary');
+        $('.buttonFinish').addClass('btn btn-default');
+
+        $('#c1').on('dblclick', function() {
+            $('.micro-autom-i-modal-sm').modal('show');
+        });
+
+        $('#c2').on('dblclick', function() {
+            $('.sensor-autom-i-modal-sm').modal('show');
+        });
+
+        $('#c3').on('dblclick', function() {
+            $('.prog-sist-modal-sm').modal('show');
+        });
+
+        $('#c4').on('dblclick', function() {
+            $('.ctrl-int-modal-sm').modal('show');
+        });
+
+        $('#c5').on('dblclick', function() {
+            $('.ing-amb-modal-sm').modal('show');
+        });
+
+        $('#c6').on('dblclick', function() {
+            $('.hum-iv-modal-sm').modal('show');
+        });
+
+        $('#c7').on('dblclick', function() {
+            $('.micro-autom-ii-modal-sm').modal('show');
+        });
+
+        $('#c8').on('dblclick', function() {
+            $('.sensor-autom-ii-modal-sm').modal('show');
+        });
+
+        $('#c9').on('dblclick', function() {
+            $('.ctrl-actua-modal-sm').modal('show');
+        });
+
+        $('#c10').on('dblclick', function() {
+            $('.ctrl-int-ii-modal-sm').modal('show');
+        });
+
+        $('#c11').on('dblclick', function() {
+            $('.eva-modal-sm').modal('show');
+        });
+
+        $('#c12').on('dblclick', function() {
+            $('.hum-v-modal-sm').modal('show');
+        });
+
+        $('#c13').on('dblclick', function() {
+            $('.proy-int-actua-modal-sm').modal('show');
+        });
+
+        function removeColors(){
+          $("input[name='nivel']").prop('checked', false);
+          $(".cur").removeClass("btn-primary");
+          $(".cur").removeClass("btn-success");
+          $(".cur").removeClass("btn-danger");
+          $(".cur").removeClass("btn-warning");
+        };
+
+        function addDanger(c){
+          $("#"+c).addClass("btn-danger");
+        }
+
+        /*$('#c1').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c1");
+          }
+        });
+
+        $('#c2').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c2");
+          }
+        });
+
+        $('#c3').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c3");
+          }
+        });
+
+        $('#c4').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c4");
+          }
+        });
+
+        $('#c5').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c5");
+          }
+        });
+
+        $('#c6').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c6");
+          }
+        });
+
+        $('#c7').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c7");
+          }
+          $("#c1").click();
+          $("#c2").click();
+          $("#c1").addClass("btn-warning");
+          $("#c2").addClass("btn-warning");
+        });
+
+        $('#c8').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c8");
+          }
+          $("#c1").click();
+          $("#c2").click();
+          $("#c1").addClass("btn-warning");
+          $("#c2").addClass("btn-warning");
+        });
+
+        $('#c9').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c9");
+          }
+          $("#c4").click();
+          $("#c6").click();
+          $("#c4").addClass("btn-warning");
+          $("#c6").addClass("btn-warning");
+        });
+
+        $('#c10').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c10");
+          }
+        });
+
+        $('#c11').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c11");
+          }
+        });
+
+        $('#c12').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c12");
+          }
+          $("#c2").click();
+          $("#c2").addClass("btn-warning");
+        });
+
+        $('#c13').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c13");
+          }
+        });*/
+
+      });
+
+      function showAStepCallback(obj, context){
+        var step = context.toStep;
+        $("input[name=nivel]:radio").prop('checked', false);
+        $(".cur").removeClass("btn-primary");
+        $(".cur").removeClass("btn-success");
+        $(".cur").removeClass("btn-danger");
+        $(".cur").removeClass("btn-warning");
+        if(step == 1){
+          $(".sem7").addClass("btn-primary");
+        }
+        if(step == 2){
+          $(".sem8").addClass("btn-primary");
+        }
+        if(step == 3){
+          $(".sem9").addClass("btn-primary");
+        }
+
+        return true;
+      }
+    </script>
+    <!-- /jQuery Smart Wizard -->
+
+    <script>
+    $(function(){
+      $("input[name=nivel]:radio").change(function(){
+        $(".cur").removeClass("btn-primary");
+        $(".cur").removeClass("btn-success");
+        $(".cur").removeClass("btn-danger");
+        $(".cur").removeClass("btn-warning");
+        $(".niv"+$(this).val()).addClass("btn-success");
+      });
+    });
+
+    </script>
+  </body>
+</html>

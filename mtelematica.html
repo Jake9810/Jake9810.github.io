@@ -1,0 +1,3832 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>MAPA DE TRAYECTORIAS | UPIITA-IPN</title>
+
+    <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+
+    <!-- Bootstrap -->
+    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- bootstrap-progressbar -->
+    <link href="vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+
+    <!-- Custom Theme Style -->
+    <link href="build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-sm">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"><i class="fa fa-university"></i> <span>UPIITA-IPN</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>Menú General</h3>
+                <ul class="nav side-menu">
+                  <li><a href="index.html"><i class="fa fa-home"></i> Inicio </a></li>
+                  <li><a href="mtelematica.html"><i class="fa fa-laptop"></i> Ingeniería Telemática </a></li>
+                  <li><a href="mmecatronica.html"><i class="fa fa-gears"></i> Ingeniería Mecatrónica </a></li>
+                  <li><a href="mbionica.html"><i class="fa fa-group"></i> Ingeniería Biónica </a></li>
+                  <li><a href="misisa.html"><i class="fa fa-car"></i> ISISA </a></li>
+                  <li><a href="menergia1.html"><i class="fa fa-lightbulb-o" aria-hidden="true"></i> Energía </a></li>
+                </ul>
+              </div>
+
+            </div>
+            <!-- /sidebar menu -->
+
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" class="dropdown">
+                  <a href="index.html">
+                    <i class="fa fa-home"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="x_panel">
+                <div class="x_title">
+                  <h2>Mapa de Trayectorias [Obligatorias] <small>Ingeniería Telemática </small></h2>
+                  <ul class="nav navbar-right panel_toolbox">
+                    <li class="dropdown">
+                      <a href="#" role="button" aria-expanded="false"><i class="fa fa-tasks"></i></a>
+
+                    </li>
+                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                    </li>
+                    <li><a class="close-link"><i class="fa fa-close"></i></a>
+                    </li>
+                  </ul>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+
+                  <!-- Smart Wizard -->
+                  <p>Presiona los botones de "Siguiente" y "Anterior" o las teclas de flecha para navegar en los semestres. Da un click para ver las materias necesarias para cursar la materia. Da doble click para ver detalles de la materia.</p>
+                  <p>
+                    <b>Elige el nivel:</b>
+                    Nivel I:
+                    <input type="radio" name="nivel" id="ni" value="1" />
+                    Nivel II:
+                    <input type="radio" name="nivel" id="nii" value="2" />
+                    Nivel III:
+                    <input type="radio" name="nivel" id="niii" value="3" />
+                    Nivel IV:
+                    <input type="radio" name="nivel" id="niii" value="4" />
+                  </p>
+                  <div id="wizard" class="form_wizard wizard_horizontal">
+                    <ul class="wizard_steps">
+                      <li>
+                        <a href="#step-1">
+                          <span class="step_no">1</span>
+                          <span class="step_descr">
+                                            1er Semestre<br />
+                                        </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#step-1">
+                          <span class="step_no">2</span>
+                          <span class="step_descr">
+                                            2do Semestre<br />
+                                        </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#step-1">
+                          <span class="step_no">3</span>
+                          <span class="step_descr">
+                                            3er Semestre<br />
+                                        </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#step-1">
+                          <span class="step_no">4</span>
+                          <span class="step_descr">
+                                            4to Semestre<br />
+                                        </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#step-1">
+                          <span class="step_no">5</span>
+                          <span class="step_descr">
+                                            5to Semestre<br />
+                                        </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#step-1">
+                          <span class="step_no">6</span>
+                          <span class="step_descr">
+                                            6to Semestre<br />
+                                        </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#step-1">
+                          <span class="step_no">7</span>
+                          <span class="step_descr">
+                                            7mo Semestre<br />
+                                        </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#step-1">
+                          <span class="step_no">8</span>
+                          <span class="step_descr">
+                                            8vo Semestre<br />
+                                        </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#step-1">
+                          <span class="step_no">9</span>
+                          <span class="step_descr">
+                                            9no Semestre<br />
+                                        </span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#step-1">
+                          <span class="step_no">10</span>
+                          <span class="step_descr">
+                                            10mo Semestre<br />
+                                        </span>
+                        </a>
+                      </li>
+                    </ul>
+                    <div id="step-1">
+                      <div class="row">
+
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv1 sem1 cur" style="width: 100%;" id="c1" data-toggle="modal">ÁLGEBRA LINEAL</button>
+                        </div>
+
+                        <div class="modal fade algebra-lineal-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Álgebra Lineal</p>
+                                <p><b>Academia:</b> Ciencias Básícas</p>
+                                <p><b>Semestre:</b> 1</p>
+                                <p><b>Nivel:</b> I</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 6.0</p>
+                                <p><b>Hrs. Práctica:</b> 0.0</p>
+                                <p><b>Créditos:</b> 12.0</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv1 sem1 cur" style="width: 100%;" id="c2" data-toggle="modal">CÁLCULO DIF. E INTEGRAL</button>
+                        </div>
+
+                        <div class="modal fade calc-difeint-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Cálculo Diferencial e Integral</p>
+                                <p><b>Academia:</b> Ciencias Básicas</p>
+                                <p><b>Semestre:</b> 1</p>
+                                <p><b>Nivel:</b> I</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 4.5</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 10.5</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv1 sem1 cur" style="width: 100%;" id="c3" data-toggle="modal">ADMINISTRACIÓN DE SISTEMAS OPERATIVOS</button>
+                        </div>
+
+                        <div class="modal fade adm-so-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Ádministración de Sistemas Operativos</p>
+                                <p><b>Academia:</b> Informática</p>
+                                <p><b>Semestre:</b> 1</p>
+                                <p><b>Nivel:</b> I</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 1.5</p>
+                                <p><b>Hrs. Práctica:</b> 3.0</p>
+                                <p><b>Créditos:</b> 6.0</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv1 sem1 cur" style="width: 100%;" id="c4" data-toggle="modal">ANÁLISIS Y DISEÑO DE SISTEMAS</button>
+                        </div>
+
+                        <div class="modal fade anal-dis-sis-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Ánalisis y Diseño de Sistemas</p>
+                                <p><b>Academia:</b> Informática</p>
+                                <p><b>Semestre:</b> 1</p>
+                                <p><b>Nivel:</b> I</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 3.0</p>
+                                <p><b>Hrs. Práctica:</b> 3.0</p>
+                                <p><b>Créditos:</b> 9.0</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv1 sem1 cur" style="width: 100%;" id="c5" data-toggle="modal">COMUNICACIÓN ORAL Y ESCRITA</button>
+                        </div>
+
+                        <div class="modal fade com-oe-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Comunicación Oral y Escrita</p>
+                                <p><b>Academia:</b> Humanidades</p>
+                                <p><b>Semestre:</b> 1</p>
+                                <p><b>Nivel:</b> I</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 1.5</p>
+                                <p><b>Hrs. Práctica:</b> 3.0</p>
+                                <p><b>Créditos:</b> 6.0</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv1 sem1 cur" style="width: 100%;" id="c6" data-toggle="modal">PROGRAMACIÓN ESTRUCTURADA</button>
+                        </div>
+
+                        <div class="modal fade progra-est-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Programación Estructurada</p>
+                                <p><b>Academia:</b> Informática</p>
+                                <p><b>Semestre:</b> 1</p>
+                                <p><b>Nivel:</b> I</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 3.0</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 7.5</p>
+                                <p><b>Tipo:</b> Elegible</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv1 sem2 cur" style="width: 100%;" id="c7" data-toggle="modal">ECS. DIFERENCIALES</button>
+                        </div>
+
+                        <div class="modal fade ecs-dif-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Ecuaciones Diferenciales</p>
+                                <p><b>Academia:</b> Ciencias Básicas</p>
+                                <p><b>Semestre:</b> 2</p>
+                                <p><b>Nivel:</b> I</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 4.5</p>
+                                <p><b>Hrs. Práctica:</b> 0.0</p>
+                                <p><b>Créditos:</b> 9.0</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv1 sem2 cur" style="width: 100%;" id="c8" data-toggle="modal">CÁLCULO MULTIVARIABLE</button>
+                        </div>
+
+                        <div class="modal fade calc-mult-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Cálculo Multivariable</p>
+                                <p><b>Academia:</b> Ciencias Básicas</p>
+                                <p><b>Semestre:</b> 2</p>
+                                <p><b>Nivel:</b> I</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 4.5</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 10.5</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv1 sem2 cur" style="width: 100%;" id="c9" data-toggle="modal">PROGRAMACIÓN</button>
+                        </div>
+
+                        <div class="modal fade prog-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Programación</p>
+                                <p><b>Academia:</b> Informática</p>
+                                <p><b>Semestre:</b> 2</p>
+                                <p><b>Nivel:</b> I</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 1.5</p>
+                                <p><b>Hrs. Práctica:</b> 3.0</p>
+                                <p><b>Créditos:</b> 6.0</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv1 sem2 cur" style="width: 100%;" id="c10" data-toggle="modal">ADMINISTRACIÓN ORGANIZACIONAL</button>
+                        </div>
+
+                        <div class="modal fade adm-org-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Administración Organizacional</p>
+                                <p><b>Academia:</b> Administración</p>
+                                <p><b>Semestre:</b> 2</p>
+                                <p><b>Nivel:</b> I</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 1.5</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 4.5</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv1 sem2 cur" style="width: 100%;" id="c11" data-toggle="modal">INGLÉS I</button>
+                        </div>
+
+                        <div class="modal fade ingles-i-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Inglés I</p>
+                                <p><b>Academia:</b> Inglés</p>
+                                <p><b>Semestre:</b> 2</p>
+                                <p><b>Nivel:</b> I</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 0.0</p>
+                                <p><b>Hrs. Práctica:</b> 3.0</p>
+                                <p><b>Créditos:</b> 3.0</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv1 sem2 cur" style="width: 100%;" id="c12" data-toggle="modal">FUNDAMENTOS DE FÍSICA</button>
+                        </div>
+
+                        <div class="modal fade fund-fis-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Fundamentos de Física</p>
+                                <p><b>Academia:</b> Ciencias Básicas</p>
+                                <p><b>Semestre:</b> 2</p>
+                                <p><b>Nivel:</b> I</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 3.0</p>
+                                <p><b>Hrs. Práctica:</b> 0.0</p>
+                                <p><b>Créditos:</b> 6.0</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv1 sem2 cur" style="width: 100%;" id="c13" data-toggle="modal">ÉTICA, PROFESIÓN Y SOCIEDAD</button>
+                        </div>
+
+                        <div class="modal fade et-pf-soc-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Ética, Profesión y Sociedad</p>
+                                <p><b>Academia:</b> Humanidades</p>
+                                <p><b>Semestre:</b> 2</p>
+                                <p><b>Nivel:</b> I</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 1.5</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 4.5</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv1 sem2 cur" style="width: 100%;" id="c14" data-toggle="modal">SOCIEDAD, CIENCIA Y TECNOLOGÍA</button>
+                        </div>
+
+                        <div class="modal fade soc-ci-tc-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Sociedad, Ciencia y Tecnología</p>
+                                <p><b>Academia:</b> Humanidades</p>
+                                <p><b>Semestre:</b> 2</p>
+                                <p><b>Nivel:</b> I</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 1.5</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 4.5</p>
+                                <p><b>Tipo:</b> Elegible</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv2 sem2 cur" style="width: 100%;" id="c15" data-toggle="modal">DESARROLLO SUSTENTABLE</button>
+                        </div>
+
+                        <div class="modal fade des-sus-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Desarrollo Sustentable</p>
+                                <p><b>Academia:</b> Humanidades</p>
+                                <p><b>Semestre:</b> 2</p>
+                                <p><b>Nivel:</b> II</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 1.5</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 4.5</p>
+                                <p><b>Tipo:</b> Elegible</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv1 sem3 cur" style="width: 100%;" id="c16" data-toggle="modal">VARIABLE COMPLEJA</button>
+                        </div>
+
+                        <div class="modal fade var-compleja-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Variable Compleja</p>
+                                <p><b>Academia:</b> Ciencias Básicas</p>
+                                <p><b>Semestre:</b> 3</p>
+                                <p><b>Nivel:</b> I</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 3.0</p>
+                                <p><b>Hrs. Práctica:</b> 0.0</p>
+                                <p><b>Créditos:</b> 6.0</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv1 sem3 cur" style="width: 100%;" id="c17" data-toggle="modal">PROBABILIDAD</button>
+                        </div>
+
+                        <div class="modal fade prob-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Probabilidad</p>
+                                <p><b>Academia:</b> Ciencias Básicas</p>
+                                <p><b>Semestre:</b> 3</p>
+                                <p><b>Nivel:</b> I</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 4.5</p>
+                                <p><b>Hrs. Práctica:</b> 0.0</p>
+                                <p><b>Créditos:</b> 9.0</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv1 sem3 cur" style="width: 100%;" id="c18" data-toggle="modal">INGLÉS II</button>
+                        </div>
+
+                        <div class="modal fade ingles-ii-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Inglés II</p>
+                                <p><b>Academia:</b> Inglés</p>
+                                <p><b>Semestre:</b> 3</p>
+                                <p><b>Nivel:</b> I</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 0.0</p>
+                                <p><b>Hrs. Práctica:</b> 3.0</p>
+                                <p><b>Créditos:</b> 3.0</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv1 sem3 cur" style="width: 100%;" id="c19" data-toggle="modal">ESTRUCTURA DE DATOS</button>
+                        </div>
+
+                        <div class="modal fade est-dat-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Estructura de Datos</p>
+                                <p><b>Academia:</b> Informática</p>
+                                <p><b>Semestre:</b> 3</p>
+                                <p><b>Nivel:</b> I</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 1.5</p>
+                                <p><b>Hrs. Práctica:</b> 3.0</p>
+                                <p><b>Créditos:</b> 6.0</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv2 sem3 cur" style="width: 100%;" id="c20" data-toggle="modal">SEÑALES Y SISTEMAS</button>
+                        </div>
+
+                        <div class="modal fade sen-sis-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Señales y Sistemas</p>
+                                <p><b>Academia:</b> Sistemas</p>
+                                <p><b>Semestre:</b> 3</p>
+                                <p><b>Nivel:</b> II</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 3.0</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 7.5</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv1 sem3 cur" style="width: 100%;" id="c21" data-toggle="modal">TEORÍA DE LOS CIRCUITOS</button>
+                        </div>
+
+                        <div class="modal fade teo-circ-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Teoría de los Circuitos</p>
+                                <p><b>Academia:</b> Sistemas</p>
+                                <p><b>Semestre:</b> 3</p>
+                                <p><b>Nivel:</b> I</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 3.0</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 7.5</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv2 sem3 cur" style="width: 100%;" id="c22" data-toggle="modal">INFORMACIÓN FINANCIERA E INGENIERÍA ECONÓMICA</button>
+                        </div>
+
+                        <div class="modal fade inf-fin-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Información Financiera e Ingeniería Económica</p>
+                                <p><b>Academia:</b> Administración</p>
+                                <p><b>Semestre:</b> 3</p>
+                                <p><b>Nivel:</b> II</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 1.5</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 4.5</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv2 sem3 cur" style="width: 100%;" id="c23" data-toggle="modal">MÉTODOS NUMÉRICOS</button>
+                        </div>
+
+                        <div class="modal fade met-num-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Métodos Numéricos</p>
+                                <p><b>Academia:</b> Ciencias Básicas</p>
+                                <p><b>Semestre:</b> 3</p>
+                                <p><b>Nivel:</b> II</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 3.0</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 7.5</p>
+                                <p><b>Tipo:</b> Elegible</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv2 sem3 cur" style="width: 100%;" id="c24" data-toggle="modal">ECONOMÍA PARA INGENIEROS</button>
+                        </div>
+
+                        <div class="modal fade eco-ing-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Economía para Ingenieros</p>
+                                <p><b>Academia:</b> Administración</p>
+                                <p><b>Semestre:</b> 3</p>
+                                <p><b>Nivel:</b> II</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 1.5</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 4.5</p>
+                                <p><b>Tipo:</b> Elegible</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv1 sem4 cur" style="width: 100%;" id="c25" data-toggle="modal">DISEÑO DIGITAL</button>
+                        </div>
+
+                        <div class="modal fade dis-dig-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Diseño Digital</p>
+                                <p><b>Academia:</b> Electrónica</p>
+                                <p><b>Semestre:</b> 4</p>
+                                <p><b>Nivel:</b> I</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 1.5</p>
+                                <p><b>Hrs. Práctica:</b> 3.0</p>
+                                <p><b>Créditos:</b> 6.0</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv1 sem4 cur" style="width: 100%;" id="c26" data-toggle="modal">ELECTROMAGNETISMO</button>
+                        </div>
+
+                        <div class="modal fade electr-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Electromagnetismo</p>
+                                <p><b>Academia:</b> Ciencias Básicas</p>
+                                <p><b>Semestre:</b> 4</p>
+                                <p><b>Nivel:</b> I</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 3.0</p>
+                                <p><b>Hrs. Práctica:</b> 3.0</p>
+                                <p><b>Créditos:</b> 9.0</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv2 sem4 cur" style="width: 100%;" id="c27" data-toggle="modal">INGLÉS III</button>
+                        </div>
+
+                        <div class="modal fade ingles-iii-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Inglés III</p>
+                                <p><b>Academia:</b> Inglés</p>
+                                <p><b>Semestre:</b> 4</p>
+                                <p><b>Nivel:</b> II</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 0.0</p>
+                                <p><b>Hrs. Práctica:</b> 3.0</p>
+                                <p><b>Créditos:</b> 3.0</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv2 sem4 cur" style="width: 100%;" id="c28" data-toggle="modal">BASE DE DATOS</button>
+                        </div>
+
+                        <div class="modal fade base-d-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Base de Datos</p>
+                                <p><b>Academia:</b> Informática</p>
+                                <p><b>Semestre:</b> 4</p>
+                                <p><b>Nivel:</b> II</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 3.0</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 7.5</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv2 sem4 cur" style="width: 100%;" id="c29" data-toggle="modal">PROGRAMACIÓN AVANZADA</button>
+                        </div>
+
+                        <div class="modal fade prog-avan-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Programación Avanzada</p>
+                                <p><b>Academia:</b> Telemática</p>
+                                <p><b>Semestre:</b> 4</p>
+                                <p><b>Nivel:</b> II</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 3.0</p>
+                                <p><b>Hrs. Práctica:</b> 3.0</p>
+                                <p><b>Créditos:</b> 9.0</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv2 sem4 cur" style="width: 100%;" id="c30" data-toggle="modal">ELECTRÓNICA</button>
+                        </div>
+
+                        <div class="modal fade electn-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Electrónica</p>
+                                <p><b>Academia:</b> Electrónica</p>
+                                <p><b>Semestre:</b> 4</p>
+                                <p><b>Nivel:</b> II</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 3.0</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 7.5</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv2 sem4 cur" style="width: 100%;" id="c31" data-toggle="modal">TEORÍA DE LAS COMUNICACIONES</button>
+                        </div>
+
+                        <div class="modal fade teo-com-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Teoría de las Comunicaciones</p>
+                                <p><b>Academia:</b> Telemática</p>
+                                <p><b>Semestre:</b> 4</p>
+                                <p><b>Nivel:</b> II</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 3.0</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 7.5</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv2 sem4 cur" style="width: 100%;" id="c32" data-toggle="modal">ELECTRÓNICA PARA LAS COMUNICACIONES</button>
+                        </div>
+
+                        <div class="modal fade elec-com-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Electrónica para las Comunicaciones</p>
+                                <p><b>Academia:</b> Electrónica</p>
+                                <p><b>Semestre:</b> 4</p>
+                                <p><b>Nivel:</b> II</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 3.0</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 7.5</p>
+                                <p><b>Tipo:</b> Elegible</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv2 sem4 cur" style="width: 100%;" id="c33" data-toggle="modal">ÓPTICA</button>
+                        </div>
+
+                        <div class="modal fade opti-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Óptica</p>
+                                <p><b>Academia:</b> Ciencias Básicas</p>
+                                <p><b>Semestre:</b> 4</p>
+                                <p><b>Nivel:</b> II</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 3.0</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 7.5</p>
+                                <p><b>Tipo:</b> Elegible</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv2 sem4 cur" style="width: 100%;" id="c34" data-toggle="modal">INGLÉS IV</button>
+                        </div>
+
+                        <div class="modal fade ingles-iv-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Inglés IV</p>
+                                <p><b>Academia:</b> Inglés</p>
+                                <p><b>Semestre:</b> 4</p>
+                                <p><b>Nivel:</b> II</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 0.0</p>
+                                <p><b>Hrs. Práctica:</b> 3.0</p>
+                                <p><b>Créditos:</b> 3.0</p>
+                                <p><b>Tipo:</b> Elegible</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv1 sem5 cur" style="width: 100%;" id="c35" data-toggle="modal">ARQUITECTURA DE COMPUTADORAS</button>
+                        </div>
+
+                        <div class="modal fade arq-com-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Arquitectura de Computadoras</p>
+                                <p><b>Academia:</b> Sistemas</p>
+                                <p><b>Semestre:</b> 5</p>
+                                <p><b>Nivel:</b> I</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 3.0</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 7.5</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv2 sem5 cur" style="width: 100%;" id="c36" data-toggle="modal">PROCESAMIENTO DIGITAL DE SEÑALES</button>
+                        </div>
+
+                        <div class="modal fade proc-dig-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Procesamiento Digital de Señales</p>
+                                <p><b>Academia:</b> Telemática</p>
+                                <p><b>Semestre:</b> 5</p>
+                                <p><b>Nivel:</b> II</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 4.5</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 10.5</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv2 sem5 cur" style="width: 100%;" id="c37" data-toggle="modal">INGENIERÍA WEB</button>
+                        </div>
+
+                        <div class="modal fade ing-web-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Ingeniería Web</p>
+                                <p><b>Academia:</b> Telemática</p>
+                                <p><b>Semestre:</b> 5</p>
+                                <p><b>Nivel:</b> II</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 3.0</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 7.5</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv2 sem5 cur" style="width: 100%;" id="c38" data-toggle="modal">PROPAGACIÓN DE ONDAS ELECTROMAGNÉTICAS</button>
+                        </div>
+
+                        <div class="modal fade prop-ond-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Propagación de Ondas Electromagnéticas</p>
+                                <p><b>Academia:</b> Telemática</p>
+                                <p><b>Semestre:</b> 5</p>
+                                <p><b>Nivel:</b> II</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 3.0</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 7.5</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv2 sem5 cur" style="width: 100%;" id="c39" data-toggle="modal">COMUNICACIONES DIGITALES</button>
+                        </div>
+
+                        <div class="modal fade com-dig-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Comunicaciones Digitales</p>
+                                <p><b>Academia:</b> Telemática</p>
+                                <p><b>Semestre:</b> 5</p>
+                                <p><b>Nivel:</b> II</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 3.0</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 7.5</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv2 sem5 cur" style="width: 100%;" id="c40" data-toggle="modal">TRANSMISIÓN DE DATOS</button>
+                        </div>
+
+                        <div class="modal fade trans-dat-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Transmisión de Datos</p>
+                                <p><b>Academia:</b> Telemática</p>
+                                <p><b>Semestre:</b> 5</p>
+                                <p><b>Nivel:</b> II</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 3.0</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 7.5</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv2 sem6 cur" style="width: 100%;" id="c41" data-toggle="modal">TELEFONÍA</button>
+                        </div>
+
+                        <div class="modal fade telef-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Telefonía</p>
+                                <p><b>Academia:</b> Telemática</p>
+                                <p><b>Semestre:</b> 6</p>
+                                <p><b>Nivel:</b> II</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 3.0</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 7.5</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv2 sem6 cur" style="width: 100%;" id="c42" data-toggle="modal">PROTOCOLOS DE INTERNET</button>
+                        </div>
+
+                        <div class="modal fade prot-int-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Protocolos de Internet</p>
+                                <p><b>Academia:</b> Telemática</p>
+                                <p><b>Semestre:</b> 6</p>
+                                <p><b>Nivel:</b> II</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 3.0</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 7.5</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv2 sem6 cur" style="width: 100%;" id="c43" data-toggle="modal">TEORÍA DE LA INFORMACIÓN</button>
+                        </div>
+
+                        <div class="modal fade teo-inf-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Teoría de la Información</p>
+                                <p><b>Academia:</b> Telemática</p>
+                                <p><b>Semestre:</b> 6</p>
+                                <p><b>Nivel:</b> II</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 3.0</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 7.5</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv3 sem6 cur" style="width: 100%;" id="c44" data-toggle="modal">LÍNEAS DE TRANSMISIÓN Y ANTENAS</button>
+                        </div>
+
+                        <div class="modal fade lin-trans-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Líneas de Transmisión y Antenas</p>
+                                <p><b>Academia:</b> Telemática</p>
+                                <p><b>Semestre:</b> 6</p>
+                                <p><b>Nivel:</b> III</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 3.0</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 7.5</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv3 sem6 cur" style="width: 100%;" id="c45" data-toggle="modal">ADMINISTRACIÓN DE PROYECTOS</button>
+                        </div>
+
+                        <div class="modal fade adm-proy-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b>Administración de Proyectos</p>
+                                <p><b>Academia:</b> Administración</p>
+                                <p><b>Semestre:</b> 6</p>
+                                <p><b>Nivel:</b> III</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 1.5</p>
+                                <p><b>Hrs. Práctica:</b> 3.0</p>
+                                <p><b>Créditos:</b> 6.0</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv4 sem6 cur" style="width: 100%;" id="c46" data-toggle="modal">DISPOSITIVOS PROGRAMABLES</button>
+                        </div>
+
+                        <div class="modal fade disp-prog-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b>Dispositivos Programables</p>
+                                <p><b>Academia:</b> Telemática</p>
+                                <p><b>Semestre:</b> 6</p>
+                                <p><b>Nivel:</b> IV</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 1.5</p>
+                                <p><b>Hrs. Práctica:</b> 4.5</p>
+                                <p><b>Créditos:</b> 7.5</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv2 sem7 cur" style="width: 100%;" id="c47" data-toggle="modal">SISTEMAS CELULARES</button>
+                        </div>
+
+                        <div class="modal fade sist-celu-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b>Sistemas Celulares</p>
+                                <p><b>Academia:</b> Telemática</p>
+                                <p><b>Semestre:</b> 7</p>
+                                <p><b>Nivel:</b> II</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 3.0</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 7.5</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv2 sem7 cur" style="width: 100%;" id="c48" data-toggle="modal">SISTEMAS DISTRIBUIDOS</button>
+                        </div>
+
+                        <div class="modal fade sist-dist-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b>Sistemas Distribuidos</p>
+                                <p><b>Academia:</b> Telemática</p>
+                                <p><b>Semestre:</b> 7</p>
+                                <p><b>Nivel:</b> II</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 3.0</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 7.5</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv3 sem7 cur" style="width: 100%;" id="c49" data-toggle="modal">LIDERAZGO Y EMPRENDEDORES</button>
+                        </div>
+
+                        <div class="modal fade lid-emp-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b>Liderazgo y Emprendedores</p>
+                                <p><b>Academia:</b> Humanidades</p>
+                                <p><b>Semestre:</b> 7</p>
+                                <p><b>Nivel:</b> III</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 1.5</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 4.5</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv3 sem7 cur" style="width: 100%;" id="c50" data-toggle="modal">BASES DE DATOS DISTRIBUIDAS</button>
+                        </div>
+
+                        <div class="modal fade bdd-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b>Base de Datos distribuidas</p>
+                                <p><b>Academia:</b> Telemática</p>
+                                <p><b>Semestre:</b> 7</p>
+                                <p><b>Nivel:</b> III</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 3.0</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 7.5</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv3 sem7 cur" style="width: 100%;" id="c51" data-toggle="modal">REDES INTELIGENTES</button>
+                        </div>
+
+                        <div class="modal fade rd-int-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b>Redes Inteligentes</p>
+                                <p><b>Academia:</b> Telemática</p>
+                                <p><b>Semestre:</b> 7</p>
+                                <p><b>Nivel:</b> III</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 1.5</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 4.5</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv3 sem7 cur" style="width: 100%;" id="c52" data-toggle="modal">MULTIMEDIA</button>
+                        </div>
+
+                        <div class="modal fade mult-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b>Multimedia</p>
+                                <p><b>Academia:</b> Telemática</p>
+                                <p><b>Semestre:</b> 7</p>
+                                <p><b>Nivel:</b> III</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 1.5</p>
+                                <p><b>Hrs. Práctica:</b> 3.0</p>
+                                <p><b>Créditos:</b> 6.0</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv4 sem7 cur" style="width: 100%;" id="c53" data-toggle="modal">REDES DE TELECOMUNICACIONES</button>
+                        </div>
+
+                        <div class="modal fade red-telecom-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b>Redes de Telecomunicaciones</p>
+                                <p><b>Academia:</b> Telemática</p>
+                                <p><b>Semestre:</b> 7</p>
+                                <p><b>Nivel:</b> IV</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 1.5</p>
+                                <p><b>Hrs. Práctica:</b> 3.0</p>
+                                <p><b>Créditos:</b> 6.0</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv2 sem8 cur" style="width: 100%;" id="c54" data-toggle="modal">OPTATIVA I</button>
+                        </div>
+
+                        <div class="modal fade opt-i-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b>Optativa I</p>
+                                <p><b>Academia:</b> Telemática/Sistemas/Administración</p>
+                                <p><b>Semestre:</b> 8</p>
+                                <p><b>Nivel:</b> II</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 3.0</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 7.5</p>
+                                <p><b>Tipo:</b> Optativa</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv3 sem8 cur" style="width: 100%;" id="c55" data-toggle="modal">SEGURIDAD EN REDES</button>
+                        </div>
+
+                        <div class="modal fade seg-red-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Seguridad en Redes</p>
+                                <p><b>Academia:</b> Telemática</p>
+                                <p><b>Semestre:</b> 8</p>
+                                <p><b>Nivel:</b> III</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 1.5</p>
+                                <p><b>Hrs. Práctica:</b> 3.0</p>
+                                <p><b>Créditos:</b> 6.0</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv3 sem8 cur" style="width: 100%;" id="c56" data-toggle="modal">METODOLOGÍA DE LA INVESTIGACIÓN</button>
+                        </div>
+
+                        <div class="modal fade met-inv-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Metogología de la Investigación</p>
+                                <p><b>Academia:</b> Humanidades</p>
+                                <p><b>Semestre:</b> 8</p>
+                                <p><b>Nivel:</b> III</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 1.5</p>
+                                <p><b>Hrs. Práctica:</b> 3.0</p>
+                                <p><b>Créditos:</b> 6.0</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv4 sem8 cur" style="width: 100%;" id="c57" data-toggle="modal">APLICACIONES DISTRIBUIDAS</button>
+                        </div>
+
+                        <div class="modal fade apl-dis-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Aplicaciones Distribuidas</p>
+                                <p><b>Academia:</b> Telemática</p>
+                                <p><b>Semestre:</b> 8</p>
+                                <p><b>Nivel:</b> IV</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 1.5</p>
+                                <p><b>Hrs. Práctica:</b> 3.0</p>
+                                <p><b>Créditos:</b> 6.0</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv4 sem8 cur" style="width: 100%;" id="c58" data-toggle="modal">SERVICIO SOCIAL</button>
+                        </div>
+
+                        <div class="modal fade serv-soc-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Servicio Social</p>
+                                <p><b>Academia:</b> Telemática</p>
+                                <p><b>Semestre:</b> 8</p>
+                                <p><b>Nivel:</b> IV</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 0.0</p>
+                                <p><b>Hrs. Práctica:</b> 0.0</p>
+                                <p><b>Créditos:</b> 0.0</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv3 sem9 cur" style="width: 100%;" id="c59" data-toggle="modal">OPTATIVA II</button>
+                        </div>
+
+                        <div class="modal fade opt-ii-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Optativa II</p>
+                                <p><b>Academia:</b> Telemática/Administración</p>
+                                <p><b>Semestre:</b> 9</p>
+                                <p><b>Nivel:</b> III</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 3.0</p>
+                                <p><b>Hrs. Práctica:</b> 1.5</p>
+                                <p><b>Créditos:</b> 7.5</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv4 sem9 cur" style="width: 100%;" id="c60" data-toggle="modal">PROYECTO TERMINAL I</button>
+                        </div>
+
+                        <div class="modal fade pt-i-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Proyecto Terminal I</p>
+                                <p><b>Academia:</b> Telemática</p>
+                                <p><b>Semestre:</b> 9</p>
+                                <p><b>Nivel:</b> IV</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 0.0</p>
+                                <p><b>Hrs. Práctica:</b> 7.5</p>
+                                <p><b>Créditos:</b> 7.5</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                          <button type="button" class="btn btn-default niv4 sem10 cur" style="width: 100%;" id="c61" data-toggle="modal">PROYECTO TERMINAL II</button>
+                        </div>
+
+                        <div class="modal fade pt-ii-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p><b>Unidad de aprendizaje:</b> Proyecto Terminal II</p>
+                                <p><b>Academia:</b> Telemática</p>
+                                <p><b>Semestre:</b> 10</p>
+                                <p><b>Nivel:</b> IV</p>
+                                <p><b>Programa Académico:</b> Ing. Telemática</p>
+                                <p><b>Hrs. Teoría:</b> 0.0</p>
+                                <p><b>Hrs. Práctica:</b> 7.5</p>
+                                <p><b>Créditos:</b> 7.5</p>
+                                <p><b>Tipo:</b> Obligatoria</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End SmartWizard Content -->
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="x_panel">
+                <div class="x_title">
+                  <h2>Mapa de Trayectorias [Optativas I] <small>Ingeniería Telemática </small></h2>
+                  <ul class="nav navbar-right panel_toolbox">
+                    <li class="dropdown">
+                      <a href="#" role="button" aria-expanded="false"><i class="fa fa-tasks"></i></a>
+
+                    </li>
+                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                    </li>
+                    <li><a class="close-link"><i class="fa fa-close"></i></a>
+                    </li>
+                  </ul>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+
+                  <div class="row">
+
+                    <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                      <button type="button" class="btn btn-default niv2 sem8 cur op1" style="width: 100%;" id="o1" data-toggle="modal">PROGRAMACIÓN DE DISPOSITIVOS MÓVILES</button>
+                    </div>
+
+                    <div class="modal fade progra-disp-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p><b>Unidad de aprendizaje:</b> Programación de Dispositivos Móviles</p>
+                            <p><b>Academia:</b> Telemática</p>
+                            <p><b>Semestre:</b> 8</p>
+                            <p><b>Nivel:</b> II</p>
+                            <p><b>Programa Académico:</b> Ing. Telemática</p>
+                            <p><b>Hrs. Teoría:</b> 3.0</p>
+                            <p><b>Hrs. Práctica:</b> 1.5</p>
+                            <p><b>Créditos:</b> 7.5</p>
+                            <p><b>Tipo:</b> Obligatoria/Optativa I</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                      <button type="button" class="btn btn-default niv2 sem8 cur op1" style="width: 100%;" id="o2" data-toggle="modal">REDES INALÁMBRICAS</button>
+                    </div>
+
+                    <div class="modal fade redes-inal-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p><b>Unidad de aprendizaje:</b> Redes Inalámbricas</p>
+                            <p><b>Academia:</b> Telemática</p>
+                            <p><b>Semestre:</b> 8</p>
+                            <p><b>Nivel:</b> II</p>
+                            <p><b>Programa Académico:</b> Ing. Telemática</p>
+                            <p><b>Hrs. Teoría:</b> 3.0</p>
+                            <p><b>Hrs. Práctica:</b> 1.5</p>
+                            <p><b>Créditos:</b> 7.5</p>
+                            <p><b>Tipo:</b> Obligatoria/Optativa I</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                      <button type="button" class="btn btn-default niv2 sem8 cur op1" style="width: 100%;" id="o3" data-toggle="modal">REDES NEURONALES</button>
+                    </div>
+
+                    <div class="modal fade redes-neuro-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p><b>Unidad de aprendizaje:</b> Redes Neuronales</p>
+                            <p><b>Academia:</b> Sistemas</p>
+                            <p><b>Semestre:</b> 8</p>
+                            <p><b>Nivel:</b> II</p>
+                            <p><b>Programa Académico:</b> Ing. Telemática</p>
+                            <p><b>Hrs. Teoría:</b> 3.0</p>
+                            <p><b>Hrs. Práctica:</b> 1.5</p>
+                            <p><b>Créditos:</b> 7.5</p>
+                            <p><b>Tipo:</b> Obligatoria/Optativa I</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-12 col-xs-12 form-group">
+                      <button type="button" class="btn btn-default niv2 sem8 cur op1" style="width: 100%;" id="o4" data-toggle="modal">LÓGICA DIFUSA</button>
+                    </div>
+
+                    <div class="modal fade logica-dif-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p><b>Unidad de aprendizaje:</b> Lógica Difusa</p>
+                            <p><b>Academia:</b> Sistemas</p>
+                            <p><b>Semestre:</b> 8</p>
+                            <p><b>Nivel:</b> II</p>
+                            <p><b>Programa Académico:</b> Ing. Telemática</p>
+                            <p><b>Hrs. Teoría:</b> 3.0</p>
+                            <p><b>Hrs. Práctica:</b> 1.5</p>
+                            <p><b>Créditos:</b> 7.5</p>
+                            <p><b>Tipo:</b> Obligatoria/Optativa I</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-5 col-sm-12 col-xs-12 form-group">
+                      <button type="button" class="btn btn-default niv2 sem8 cur op1" style="width: 100%;" id="o5" data-toggle="modal">SISTEMAS DE INFORMACIÓN GEOGRAFICA</button>
+                    </div>
+
+                    <div class="modal fade sist-inf-geo-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p><b>Unidad de aprendizaje:</b> Sistemas de Información Geográfica</p>
+                            <p><b>Academia:</b> Telemática</p>
+                            <p><b>Semestre:</b> 8</p>
+                            <p><b>Nivel:</b> II</p>
+                            <p><b>Programa Académico:</b> Ing. Telemática</p>
+                            <p><b>Hrs. Teoría:</b> 3.0</p>
+                            <p><b>Hrs. Práctica:</b> 1.5</p>
+                            <p><b>Créditos:</b> 7.5</p>
+                            <p><b>Tipo:</b> Obligatoria/Optativa I</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-7 col-sm-12 col-xs-12 form-group">
+                      <button type="button" class="btn btn-default niv2 sem8 cur op1" style="width: 100%;" id="o6" data-toggle="modal">NORMATIVIDAD EN TELECOMUNICACIONES E INFORMÁTICA</button>
+                    </div>
+
+                    <div class="modal fade norma-tele-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p><b>Unidad de aprendizaje:</b> Normatividad en Telecomunicaciones e Informática</p>
+                            <p><b>Academia:</b> Administración</p>
+                            <p><b>Semestre:</b> 8</p>
+                            <p><b>Nivel:</b> II</p>
+                            <p><b>Programa Académico:</b> Ing. Telemática</p>
+                            <p><b>Hrs. Teoría:</b> 3.0</p>
+                            <p><b>Hrs. Práctica:</b> 1.5</p>
+                            <p><b>Créditos:</b> 7.5</p>
+                            <p><b>Tipo:</b> Obligatoria/Optativa I</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="x_panel">
+                <div class="x_title">
+                  <h2>Mapa de Trayectorias [Optativas II] <small>Ingeniería Telemática </small></h2>
+                  <ul class="nav navbar-right panel_toolbox">
+                    <li class="dropdown">
+                      <a href="#" role="button" aria-expanded="false"><i class="fa fa-tasks"></i></a>
+
+                    </li>
+                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                    </li>
+                    <li><a class="close-link"><i class="fa fa-close"></i></a>
+                    </li>
+                  </ul>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+
+                  <div class="row">
+
+                    <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                      <button type="button" class="btn btn-default niv3 sem9 cur op2" style="width: 100%;" id="o7" data-toggle="modal">TELEVISIÓN DIGITAL</button>
+                    </div>
+
+                    <div class="modal fade tele-dig-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p><b>Unidad de aprendizaje:</b> Televisión Digital</p>
+                            <p><b>Academia:</b> Telemática</p>
+                            <p><b>Semestre:</b> 9</p>
+                            <p><b>Nivel:</b> III</p>
+                            <p><b>Programa Académico:</b> Ing. Telemática</p>
+                            <p><b>Hrs. Teoría:</b> 3.0</p>
+                            <p><b>Hrs. Práctica:</b> 1.5</p>
+                            <p><b>Créditos:</b> 7.5</p>
+                            <p><b>Tipo:</b> Obligatoria/Optativa II</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                      <button type="button" class="btn btn-default niv3 sem9 cur op2" style="width: 100%;" id="o8" data-toggle="modal">SISTEMAS DE CALIDAD</button>
+                    </div>
+
+                    <div class="modal fade sis-cal-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p><b>Unidad de aprendizaje:</b> Sistemas de Calidad</p>
+                            <p><b>Academia:</b> Administración</p>
+                            <p><b>Semestre:</b> 9</p>
+                            <p><b>Nivel:</b> III</p>
+                            <p><b>Programa Académico:</b> Ing. Telemática</p>
+                            <p><b>Hrs. Teoría:</b> 3.0</p>
+                            <p><b>Hrs. Práctica:</b> 1.5</p>
+                            <p><b>Créditos:</b> 7.5</p>
+                            <p><b>Tipo:</b> Obligatoria/Optativa II</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                      <button type="button" class="btn btn-default niv2 sem9 cur op2" style="width: 100%;" id="o9" data-toggle="modal">FILTRADO AVANZADO</button>
+                    </div>
+
+                    <div class="modal fade filt-avan-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p><b>Unidad de aprendizaje:</b> Filtrado Avanzado</p>
+                            <p><b>Academia:</b> Telemática</p>
+                            <p><b>Semestre:</b> 9</p>
+                            <p><b>Nivel:</b> III</p>
+                            <p><b>Programa Académico:</b> Ing. Telemática</p>
+                            <p><b>Hrs. Teoría:</b> 3.0</p>
+                            <p><b>Hrs. Práctica:</b> 1.5</p>
+                            <p><b>Créditos:</b> 7.5</p>
+                            <p><b>Tipo:</b> Obligatoria/Optativa II</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                      <button type="button" class="btn btn-default niv2 sem9 cur op2" style="width: 100%;" id="o10" data-toggle="modal">CRIPTOGRAFÍA</button>
+                    </div>
+
+                    <div class="modal fade cripto-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p><b>Unidad de aprendizaje:</b> Criptografía</p>
+                            <p><b>Academia:</b> Telemática</p>
+                            <p><b>Semestre:</b> 9</p>
+                            <p><b>Nivel:</b> III</p>
+                            <p><b>Programa Académico:</b> Ing. Telemática</p>
+                            <p><b>Hrs. Teoría:</b> 3.0</p>
+                            <p><b>Hrs. Práctica:</b> 1.5</p>
+                            <p><b>Créditos:</b> 7.5</p>
+                            <p><b>Tipo:</b> Obligatoria/Optativa II</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-12 col-xs-12 form-group">
+                      <button type="button" class="btn btn-default niv2 sem9 cur op2" style="width: 100%;" id="o11" data-toggle="modal">MICROONDAS</button>
+                    </div>
+
+                    <div class="modal fade microon-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p><b>Unidad de aprendizaje:</b> Microondas</p>
+                            <p><b>Academia:</b> Telemática</p>
+                            <p><b>Semestre:</b> 9</p>
+                            <p><b>Nivel:</b> III</p>
+                            <p><b>Programa Académico:</b> Ing. Telemática</p>
+                            <p><b>Hrs. Teoría:</b> 3.0</p>
+                            <p><b>Hrs. Práctica:</b> 1.5</p>
+                            <p><b>Créditos:</b> 7.5</p>
+                            <p><b>Tipo:</b> Obligatoria/Optativa II</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-5 col-sm-12 col-xs-12 form-group">
+                      <button type="button" class="btn btn-default niv2 sem9 cur op2" style="width: 100%;" id="o12" data-toggle="modal">PROCESAMIENTO DE IMÁGENES</button>
+                    </div>
+
+                    <div class="modal fade proce-ima-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p><b>Unidad de aprendizaje:</b> Procesamiento de Imágenes</p>
+                            <p><b>Academia:</b> Telemática</p>
+                            <p><b>Semestre:</b> 9</p>
+                            <p><b>Nivel:</b> III</p>
+                            <p><b>Programa Académico:</b> Ing. Telemática</p>
+                            <p><b>Hrs. Teoría:</b> 3.0</p>
+                            <p><b>Hrs. Práctica:</b> 1.5</p>
+                            <p><b>Créditos:</b> 7.5</p>
+                            <p><b>Tipo:</b> Obligatoria/Optativa II</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12 col-xs-12 form-group">
+                      <button type="button" class="btn btn-default niv2 sem9 cur op2" style="width: 100%;" id="o13" data-toggle="modal">PROCESAMIENTO DE VOZ</button>
+                    </div>
+
+                    <div class="modal fade proce-voz-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                      <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel2">Información</h4>
+                          </div>
+                          <div class="modal-body">
+                            <p><b>Unidad de aprendizaje:</b> Procesamiento de Voz</p>
+                            <p><b>Academia:</b> Telemática</p>
+                            <p><b>Semestre:</b> 9</p>
+                            <p><b>Nivel:</b> III</p>
+                            <p><b>Programa Académico:</b> Ing. Telemática</p>
+                            <p><b>Hrs. Teoría:</b> 3.0</p>
+                            <p><b>Hrs. Práctica:</b> 1.5</p>
+                            <p><b>Créditos:</b> 7.5</p>
+                            <p><b>Tipo:</b> Obligatoria/Optativa II</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="vendors/nprogress/nprogress.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="vendors/iCheck/icheck.min.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="build/js/custom.min.js"></script>
+    <!-- jQuery Smart Wizard -->
+    <script src="vendors/SW/js/jquery.smartWizard.js"></script>
+
+    <!-- jQuery Smart Wizard -->
+    <script>
+      $(document).ready(function() {
+
+        $('#wizard').smartWizard({
+          keyNavigation: true,
+          enableAllSteps: true,
+          includeFinishButton : false,
+          labelPrevious:'Anterior',
+          labelNext:'Siguiente',
+          onShowStep:showAStepCallback,
+          reverseButtonsOrder: true
+        });
+
+        $('.buttonNext').addClass('btn btn-success');
+        $('.buttonPrevious').addClass('btn btn-primary');
+        $('.buttonFinish').addClass('btn btn-default');
+
+        $('#c1').on('dblclick', function() {
+            $('.algebra-lineal-modal-sm').modal('show');
+        });
+
+        $('#c2').on('dblclick', function() {
+            $('.calc-difeint-modal-sm').modal('show');
+        });
+
+        $('#c3').on('dblclick', function() {
+            $('.adm-so-modal-sm').modal('show');
+        });
+
+        $('#c4').on('dblclick', function() {
+            $('.anal-dis-sis-modal-sm').modal('show');
+        });
+
+        $('#c5').on('dblclick', function() {
+            $('.com-oe-modal-sm').modal('show');
+        });
+
+        $('#c6').on('dblclick', function() {
+            $('.progra-est-modal-sm').modal('show');
+        });
+
+        $('#c7').on('dblclick', function() {
+            $('.ecs-dif-modal-sm').modal('show');
+        });
+
+        $('#c8').on('dblclick', function() {
+            $('.calc-mult-modal-sm').modal('show');
+        });
+
+        $('#c9').on('dblclick', function() {
+            $('.prog-modal-sm').modal('show');
+        });
+
+        $('#c10').on('dblclick', function() {
+            $('.adm-org-modal-sm').modal('show');
+        });
+
+        $('#c11').on('dblclick', function() {
+            $('.ingles-i-modal-sm').modal('show');
+        });
+
+        $('#c12').on('dblclick', function() {
+            $('.fund-fis-modal-sm').modal('show');
+        });
+
+        $('#c13').on('dblclick', function() {
+            $('.et-pf-soc-modal-sm').modal('show');
+        });
+
+        $('#c14').on('dblclick', function() {
+            $('.soc-ci-tc-modal-sm').modal('show');
+        });
+
+        $('#c15').on('dblclick', function() {
+            $('.des-sus-modal-sm').modal('show');
+        });
+
+        $('#c16').on('dblclick', function() {
+            $('.var-compleja-modal-sm').modal('show');
+        });
+
+        $('#c17').on('dblclick', function() {
+            $('.prob-modal-sm').modal('show');
+        });
+
+        $('#c18').on('dblclick', function() {
+            $('.ingles-ii-modal-sm').modal('show');
+        });
+
+        $('#c19').on('dblclick', function() {
+            $('.est-dat-modal-sm').modal('show');
+        });
+
+        $('#c20').on('dblclick', function() {
+            $('.sen-sis-modal-sm').modal('show');
+        });
+
+        $('#c21').on('dblclick', function() {
+            $('.teo-circ-modal-sm').modal('show');
+        });
+
+        $('#c22').on('dblclick', function() {
+            $('.teo-circ-modal-sm').modal('show');
+        });
+
+        $('#c23').on('dblclick', function() {
+            $('.met-num-modal-sm').modal('show');
+        });
+
+        $('#c24').on('dblclick', function() {
+            $('.eco-ing-modal-sm').modal('show');
+        });
+
+        $('#c25').on('dblclick', function() {
+            $('.dis-dig-modal-sm').modal('show');
+        });
+
+        $('#c26').on('dblclick', function() {
+            $('.electr-modal-sm').modal('show');
+        });
+
+        $('#c27').on('dblclick', function() {
+            $('.ingles-iii-modal-sm').modal('show');
+        });
+
+        $('#c28').on('dblclick', function() {
+            $('.base-d-modal-sm').modal('show');
+        });
+
+        $('#c29').on('dblclick', function() {
+            $('.prog-avan-modal-sm').modal('show');
+        });
+
+        $('#c30').on('dblclick', function() {
+            $('.electn-modal-sm').modal('show');
+        });
+
+        $('#c31').on('dblclick', function() {
+            $('.teo-com-modal-sm').modal('show');
+        });
+
+        $('#c32').on('dblclick', function() {
+            $('.elec-com-modal-sm').modal('show');
+        });
+
+        $('#c33').on('dblclick', function() {
+            $('.opti-modal-sm').modal('show');
+        });
+
+        $('#c34').on('dblclick', function() {
+            $('.ingles-iv-modal-sm').modal('show');
+        });
+
+        $('#c35').on('dblclick', function() {
+            $('.arq-com-modal-sm').modal('show');
+        });
+
+        $('#c36').on('dblclick', function() {
+            $('.proc-dig-modal-sm').modal('show');
+        });
+
+        $('#c37').on('dblclick', function() {
+            $('.ing-web-modal-sm').modal('show');
+        });
+
+        $('#c38').on('dblclick', function() {
+            $('.prop-ond-modal-sm').modal('show');
+        });
+
+        $('#c39').on('dblclick', function() {
+            $('.com-dig-modal-sm').modal('show');
+        });
+
+        $('#c40').on('dblclick', function() {
+            $('.trans-dat-modal-sm').modal('show');
+        });
+
+        $('#c41').on('dblclick', function() {
+            $('.telef-modal-sm').modal('show');
+        });
+
+        $('#c42').on('dblclick', function() {
+            $('.prot-int-modal-sm').modal('show');
+        });
+
+        $('#c43').on('dblclick', function() {
+            $('.teo-inf-modal-sm').modal('show');
+        });
+
+        $('#c44').on('dblclick', function() {
+            $('.lin-trans-modal-sm').modal('show');
+        });
+
+        $('#c45').on('dblclick', function() {
+            $('.adm-proy-modal-sm').modal('show');
+        });
+
+        $('#c46').on('dblclick', function() {
+            $('.disp-prog-modal-sm').modal('show');
+        });
+
+        $('#c47').on('dblclick', function() {
+            $('.sist-celu-modal-sm').modal('show');
+        });
+
+        $('#c48').on('dblclick', function() {
+            $('.sist-dist-modal-sm').modal('show');
+        });
+
+        $('#c49').on('dblclick', function() {
+            $('.lid-emp-modal-sm').modal('show');
+        });
+
+        $('#c50').on('dblclick', function() {
+            $('.bdd-modal-sm').modal('show');
+        });
+
+        $('#c51').on('dblclick', function() {
+            $('.rd-int-modal-sm').modal('show');
+        });
+
+        $('#c52').on('dblclick', function() {
+            $('.mult-modal-sm').modal('show');
+        });
+
+        $('#c53').on('dblclick', function() {
+            $('.red-telecom-modal-sm').modal('show');
+        });
+
+        $('#c54').on('dblclick', function() {
+            $('.opt-i-modal-sm').modal('show');
+        });
+
+        $('#c55').on('dblclick', function() {
+            $('.seg-red-modal-sm').modal('show');
+        });
+
+        $('#c56').on('dblclick', function() {
+            $('.met-inv-modal-sm').modal('show');
+        });
+
+        $('#c57').on('dblclick', function() {
+            $('.apl-dis-modal-sm').modal('show');
+        });
+
+        $('#c58').on('dblclick', function() {
+            $('.serv-soc-modal-sm').modal('show');
+        });
+
+        $('#c59').on('dblclick', function() {
+            $('.opt-ii-modal-sm').modal('show');
+        });
+
+        $('#c60').on('dblclick', function() {
+            $('.pt-i-modal-sm').modal('show');
+        });
+
+        $('#c61').on('dblclick', function() {
+            $('.pt-ii-modal-sm').modal('show');
+        });
+
+        $('#o1').on('dblclick', function() {
+            $('.progra-disp-modal-sm').modal('show');
+        });
+
+        $('#o2').on('dblclick', function() {
+            $('.redes-inal-modal-sm').modal('show');
+        });
+
+        $('#o3').on('dblclick', function() {
+            $('.redes-neuro-modal-sm').modal('show');
+        });
+
+        $('#o4').on('dblclick', function() {
+            $('.logica-dif-modal-sm').modal('show');
+        });
+
+        $('#o5').on('dblclick', function() {
+            $('.sist-inf-geo-modal-sm').modal('show');
+        });
+
+        $('#o6').on('dblclick', function() {
+            $('.norma-tele-modal-sm').modal('show');
+        });
+
+        $('#o7').on('dblclick', function() {
+            $('.tele-dig-modal-sm').modal('show');
+        });
+
+        $('#o8').on('dblclick', function() {
+            $('.sis-cal-modal-sm').modal('show');
+        });
+
+        $('#o9').on('dblclick', function() {
+            $('.filt-avan-modal-sm').modal('show');
+        });
+
+        $('#o10').on('dblclick', function() {
+            $('.cripto-modal-sm').modal('show');
+        });
+
+        $('#o11').on('dblclick', function() {
+            $('.microon-modal-sm').modal('show');
+        });
+
+        $('#o12').on('dblclick', function() {
+            $('.proce-ima-modal-sm').modal('show');
+        });
+
+        $('#o13').on('dblclick', function() {
+            $('.proce-voz-modal-sm').modal('show');
+        });
+
+        function removeColors(){
+          $("input[name='nivel']").prop('checked', false);
+          $(".cur").removeClass("btn-primary");
+          $(".cur").removeClass("btn-success");
+          $(".cur").removeClass("btn-danger");
+          $(".cur").removeClass("btn-warning");
+        };
+
+        function addDanger(c){
+          $("#"+c).addClass("btn-danger");
+        }
+
+        $('#c1').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c1");
+          }
+        });
+
+        $('#c2').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c2");
+          }
+        });
+
+        $('#c3').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c3");
+          }
+        });
+
+        $('#c4').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c4");
+          }
+        });
+
+        $('#c5').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c5");
+          }
+        });
+
+        $('#c6').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c6");
+          }
+        });
+
+        $('#c7').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c7");
+          }
+          $("#c1").click();
+          $("#c2").click();
+          $("#c1").addClass("btn-warning");
+          $("#c2").addClass("btn-warning");
+        });
+
+        $('#c8').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c8");
+          }
+          $("#c1").click();
+          $("#c2").click();
+          $("#c1").addClass("btn-warning");
+          $("#c2").addClass("btn-warning");
+        });
+
+        $('#c9').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c9");
+          }
+          $("#c4").click();
+          $("#c6").click();
+          $("#c4").addClass("btn-warning");
+          $("#c6").addClass("btn-warning");
+        });
+
+        $('#c10').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c10");
+          }
+        });
+
+        $('#c11').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c11");
+          }
+        });
+
+        $('#c12').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c12");
+          }
+          $("#c2").click();
+          $("#c2").addClass("btn-warning");
+        });
+
+        $('#c13').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c13");
+          }
+        });
+
+        $('#c14').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c14");
+          }
+        });
+
+        $('#c15').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c15");
+          }
+        });
+
+        $('#c16').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c16");
+          }
+          $("#c1").click();
+          $("#c2").click();
+          $("#c1").addClass("btn-warning");
+          $("#c2").addClass("btn-warning");
+        });
+
+        $('#c17').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c17");
+          }
+          $("#c1").click();
+          $("#c2").click();
+          $("#c1").addClass("btn-warning");
+          $("#c2").addClass("btn-warning");
+        });
+
+        $('#c18').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c18");
+          }
+          $("#c11").click();
+          $("#c11").addClass("btn-warning");
+        });
+
+        $('#c19').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c19");
+          }
+          $("#c6").click();
+          $("#c6").addClass("btn-warning");
+        });
+
+        $('#c20').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c20");
+          }
+          $("#c2").click();
+          $("#c7").click();
+          $("#c2").addClass("btn-warning");
+          $("#c7").addClass("btn-warning");
+        });
+
+        $('#c21').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c21");
+          }
+          $("#c1").click();
+          $("#c2").click();
+          $("#c7").click();
+          $("#c12").click();
+          $("#c1").addClass("btn-warning");
+          $("#c2").addClass("btn-warning");
+          $("#c7").addClass("btn-warning");
+          $("#c12").addClass("btn-warning");
+        });
+
+        $('#c22').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c22");
+          }
+        });
+
+        $('#c23').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c23");
+          }
+          $("#c7").click();
+          $("#c8").click();
+          $("#c9").click();
+          $("#c7").addClass("btn-warning");
+          $("#c8").addClass("btn-warning");
+          $("#c9").addClass("btn-warning");
+        });
+
+        $('#c24').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c24");
+          }
+        });
+
+        $('#c25').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c25");
+          }
+          $("#c21").click();
+          $("#c21").addClass("btn-warning");
+        });
+
+        $('#c26').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c26");
+          }
+          $("#c8").click();
+          $("#c12").click();
+          $("#c8").addClass("btn-warning");
+          $("#c12").addClass("btn-warning");
+        });
+
+        $('#c27').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c27");
+          }
+          $("#c18").click();
+          $("#c18").addClass("btn-warning");
+        });
+
+        $('#c28').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c28");
+          }
+          $("#c19").click();
+          $("#c19").addClass("btn-warning");
+        });
+
+        $('#c29').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c29");
+          }
+          $("#c28").click();
+          $("#c4").click();
+          $("#c6").click();
+          $("#c3").click();
+          $("#c28").addClass("btn-warning");
+          $("#c4").addClass("btn-warning");
+          $("#c6").addClass("btn-warning");
+          $("#c3").addClass("btn-warning");
+        });
+
+        $('#c30').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c30");
+          }
+          $("#c21").click();
+          $("#c21").addClass("btn-warning");
+        });
+
+        $('#c31').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c31");
+          }
+          $("#c20").click();
+          $("#c20").addClass("btn-warning");
+        });
+
+        $('#c32').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c32");
+          }
+          $("#c30").click();
+          $("#c31").click();
+          $("#c30").addClass("btn-warning");
+          $("#c31").addClass("btn-warning");
+        });
+
+        $('#c33').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c33");
+          }
+          $("#c26").click();
+          $("#c26").addClass("btn-warning");
+        });
+
+        $('#c34').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c34");
+          }
+          $("#c27").click();
+          $("#c27").addClass("btn-warning");
+        });
+
+        $('#c35').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c35");
+          }
+          $("#c25").click();
+          $("#c25").addClass("btn-warning");
+        });
+
+        $('#c36').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c36");
+          }
+          $("#c20").click();
+          $("#c31").click();
+          $("#c20").addClass("btn-warning");
+          $("#c31").addClass("btn-warning");
+        });
+
+        $('#c37').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c37");
+          }
+          $("#c4").click();
+          $("#c9").click();
+          $("#c4").addClass("btn-warning");
+          $("#c9").addClass("btn-warning");
+        });
+
+        $('#c38').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c38");
+          }
+          $("#c26").click();
+          $("#c26").addClass("btn-warning");
+        });
+
+        $('#c39').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c39");
+          }
+          $("#c31").click();
+          $("#c36").click();
+          $("#c25").click();
+          $("#c17").click();
+          $("#c31").addClass("btn-warning");
+          $("#c36").addClass("btn-warning");
+          $("#c25").addClass("btn-warning");
+          $("#c17").addClass("btn-warning");
+        });
+
+        $('#c40').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c40");
+          }
+          $("#c9").click();
+          $("#c31").click();
+          $("#c9").addClass("btn-warning");
+          $("#c31").addClass("btn-warning");
+        });
+
+        $('#c41').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c41");
+          }
+          $("#c36").click();
+          $("#c21").click();
+          $("#c25").click();
+          $("#c17").click();
+          $("#c9").click();
+          $("#c39").click();
+          $("#c36").addClass("btn-warning");
+          $("#c21").addClass("btn-warning");
+          $("#c25").addClass("btn-warning");
+          $("#c17").addClass("btn-warning");
+          $("#c9").addClass("btn-warning");
+          $("#c39").addClass("btn-warning");
+        });
+
+        $('#c42').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c42");
+          }
+        });
+
+        $('#c43').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c43");
+          }
+          $("#c2").click();
+          $("#c17").click();
+          $("#c1").click();
+          $("#c9").click();
+          $("#c31").click();
+          $("#c2").addClass("btn-warning");
+          $("#c17").addClass("btn-warning");
+          $("#c1").addClass("btn-warning");
+          $("#c9").addClass("btn-warning");
+          $("#c31").addClass("btn-warning");
+        });
+
+        $('#c44').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c44");
+          }
+          $("#c16").click();
+          $("#c7").click();
+          $("#c21").click();
+          $("#c38").click();
+          $("#c16").addClass("btn-warning");
+          $("#c7").addClass("btn-warning");
+          $("#c21").addClass("btn-warning");
+          $("#c38").addClass("btn-warning");
+        });
+
+        $('#c45').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c45");
+          }
+        });
+
+        $('#c46').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c46");
+          }
+          $("#c35").click();
+          $("#c36").click();
+          $("#c39").click();
+          $("#c35").addClass("btn-warning");
+          $("#c36").addClass("btn-warning");
+          $("#c39").addClass("btn-warning");
+        });
+
+        $('#c47').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c47");
+          }
+          $("#c38").click();
+          $("#c41").click();
+          $("#c38").addClass("btn-warning");
+          $("#c41").addClass("btn-warning");
+        });
+
+        $('#c48').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c48");
+          }
+          $("#c28").click();
+          $("#c29").click();
+          $("#c28").addClass("btn-warning");
+          $("#c29").addClass("btn-warning");
+        });
+
+        $('#c49').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c49");
+          }
+        });
+
+        $('#c50').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c50");
+          }
+          $("#c4").click();
+          $("#c19").click();
+          $("#c9").click();
+          $("#c28").click();
+          $("#c48").click();
+          $("#c4").addClass("btn-warning");
+          $("#c19").addClass("btn-warning");
+          $("#c9").addClass("btn-warning");
+          $("#c28").addClass("btn-warning");
+          $("#c48").addClass("btn-warning");
+        });
+
+        $('#c51').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c51");
+          }
+          $("#c41").click();
+          $("#c42").click();
+          $("#c41").addClass("btn-warning");
+          $("#c42").addClass("btn-warning");
+        });
+
+        $('#c52').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c52");
+          }
+          $("#c28").click();
+          $("#c29").click();
+          $("#c35").click();
+          $("#c37").click();
+          $("#c5").click();
+          $("#c28").addClass("btn-warning");
+          $("#c29").addClass("btn-warning");
+          $("#c35").addClass("btn-warning");
+          $("#c37").addClass("btn-warning");
+          $("#c5").addClass("btn-warning");
+        });
+
+        $('#c53').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c53");
+          }
+          $("#c39").click();
+          $("#c40").click();
+          $("#c43").click();
+          $("#c39").addClass("btn-warning");
+          $("#c40").addClass("btn-warning");
+          $("#c43").addClass("btn-warning");
+        });
+
+        $('#c54').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c54");
+          }
+          $(".op1").addClass("btn-warning");
+        });
+
+        $('#c55').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c55");
+          }
+          $("#c29").click();
+          $("#c42").click();
+          $("#c48").click();
+          $("#c29").addClass("btn-warning");
+          $("#c42").addClass("btn-warning");
+          $("#c48").addClass("btn-warning");
+        });
+
+        $('#c56').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c56");
+          }
+          $("#c5").click();
+          $("#c53").click();
+          $("#c50").click();
+          $("#c5").addClass("btn-warning");
+          $("#c53").addClass("btn-warning");
+          $("#c50").addClass("btn-warning");
+        });
+
+        $('#c57').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c57");
+          }
+          $("#c50").click();
+          $("#c37").click();
+          $("#c42").click();
+          $("#c48").click();
+          $("#c29").click();
+          $("#c50").addClass("btn-warning");
+          $("#c37").addClass("btn-warning");
+          $("#c42").addClass("btn-warning");
+          $("#c48").addClass("btn-warning");
+          $("#c29").addClass("btn-warning");
+        });
+
+        $('#c58').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c58");
+          }
+        });
+
+        $('#c59').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c59");
+          }
+          $(".op2").addClass("btn-warning");
+        });
+
+        $('#c60').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c60");
+          }
+          $("#c56").click();
+          $("#c56").addClass("btn-warning");
+        });
+
+        $('#c61').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("c61");
+          }
+          $("#c56").click();
+          $("#c60").click();
+          $("#c56").addClass("btn-warning");
+          $("#c60").addClass("btn-warning");
+        });
+
+        $('#o1').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("o1");
+          }
+          $("#c9").click();
+          $("#c19").click();
+          $("#c9").addClass("btn-warning");
+          $("#c19").addClass("btn-warning");
+        });
+
+        $('#o2').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("o2");
+          }
+          $("#c20").click();
+          $("#c38").click();
+          $("#c36").click();
+          $("#c20").addClass("btn-warning");
+          $("#c38").addClass("btn-warning");
+          $("#c36").addClass("btn-warning");
+        });
+
+        $('#o3').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("o3");
+          }
+          $("#c30").click();
+          $("#c40").click();
+          $("#c36").click();
+          $("#c43").click();
+          $("#c30").addClass("btn-warning");
+          $("#c40").addClass("btn-warning");
+          $("#c36").addClass("btn-warning");
+          $("#c43").addClass("btn-warning");
+        });
+
+        $('#o4').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("o4");
+          }
+          $("#c30").click();
+          $("#c40").click();
+          $("#c36").click();
+          $("#c43").click();
+          $("#c30").addClass("btn-warning");
+          $("#c40").addClass("btn-warning");
+          $("#c36").addClass("btn-warning");
+          $("#c43").addClass("btn-warning");
+        });
+
+        $('#o5').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("o5");
+          }
+          $("#c9").click();
+          $("#c28").click();
+          $("#c9").addClass("btn-warning");
+          $("#c28").addClass("btn-warning");
+        });
+
+        $('#o6').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("o6");
+          }
+        });
+
+        $('#o7').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("o7");
+          }
+          $("#c43").click();
+          $("#c44").click();
+          $("#c36").click();
+          $("#c43").addClass("btn-warning");
+          $("#c44").addClass("btn-warning");
+          $("#c36").addClass("btn-warning");
+        });
+
+        $('#o8').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("o8");
+          }
+        });
+
+        $('#o9').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("o9");
+          }
+          $("#c25").click();
+          $("#c36").click();
+          $("#c25").addClass("btn-warning");
+          $("#c36").addClass("btn-warning");
+        });
+
+        $('#o10').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("o10");
+          }
+          $("#c1").click();
+          $("#c9").click();
+          $("#c17").click();
+          $("#c29").click();
+          $("#c1").addClass("btn-warning");
+          $("#c9").addClass("btn-warning");
+          $("#c17").addClass("btn-warning");
+          $("#c29").addClass("btn-warning");
+        });
+
+        $('#o11').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("o11");
+          }
+          $("#c38").click();
+          $("#c44").click();
+          $("#c47").click();
+          $("#c38").addClass("btn-warning");
+          $("#c44").addClass("btn-warning");
+          $("#c47").addClass("btn-warning");
+        });
+
+        $('#o12').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("o12");
+          }
+          $("#c36").click();
+          $("#c39").click();
+          $("#c43").click();
+          $("#c9").click();
+          $("#c36").addClass("btn-warning");
+          $("#c39").addClass("btn-warning");
+          $("#c43").addClass("btn-warning");
+          $("#c9").addClass("btn-warning");
+        });
+
+        $('#o13').on('click', function(e) {
+          if(e.which){
+            removeColors();
+            addDanger("o13");
+          }
+          $("#c36").click();
+          $("#c36").addClass("btn-warning");
+        });
+
+      });
+
+      function showAStepCallback(obj, context){
+        var step = context.toStep;
+        $("input[name=nivel]:radio").prop('checked', false);
+        $(".cur").removeClass("btn-primary");
+        $(".cur").removeClass("btn-success");
+        $(".cur").removeClass("btn-danger");
+        $(".cur").removeClass("btn-warning");
+        if(step == 1){
+          $(".sem1").addClass("btn-primary");
+        }
+        if(step == 2){
+          $(".sem2").addClass("btn-primary");
+        }
+        if(step == 3){
+          $(".sem3").addClass("btn-primary");
+        }
+        if(step == 4){
+          $(".sem4").addClass("btn-primary");
+        }
+        if(step == 5){
+          $(".sem5").addClass("btn-primary");
+        }
+        if(step == 6){
+          $(".sem6").addClass("btn-primary");
+        }
+        if(step == 7){
+          $(".sem7").addClass("btn-primary");
+        }
+        if(step == 8){
+          $(".sem8").addClass("btn-primary");
+        }
+        if(step == 9){
+          $(".sem9").addClass("btn-primary");
+        }
+        if(step == 10){
+          $(".sem10").addClass("btn-primary");
+        }
+
+        return true;
+      }
+    </script>
+    <!-- /jQuery Smart Wizard -->
+
+    <script>
+    $(function(){
+      $("input[name=nivel]:radio").change(function(){
+        $(".cur").removeClass("btn-primary");
+        $(".cur").removeClass("btn-success");
+        $(".cur").removeClass("btn-danger");
+        $(".cur").removeClass("btn-warning");
+        $(".niv"+$(this).val()).addClass("btn-success");
+      });
+    });
+
+    </script>
+  </body>
+</html>
